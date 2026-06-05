@@ -202,9 +202,9 @@
 .promoBannerBox {
   margin-top: 1.5rem;
   border-radius: 8px;
-  border: 2px solid #29cfdc;
-  background: #ffffff;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  border: 2px solid var(--primary);
+  background: var(--secondary);
+  box-shadow: var(--shadow-dark);
   overflow: hidden;
   animation: slideDown 0.3s ease-out;
 }
@@ -215,24 +215,26 @@
 }
 
 .promoHeader {
-  background: #0a848c;
-  color: #ffffff;
+  background: rgba(var(--primary-rgb), 0.15);
+  color: var(--primary);
   padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid var(--border);
 }
 
 .promoHeader h4 {
   margin: 0;
   font-size: 1.1rem;
   font-weight: 700;
+  font-family: var(--font-fjalla), sans-serif;
 }
 
 .closeBtn {
   background: transparent;
   border: none;
-  color: #ffffff;
+  color: var(--text-primary);
   font-size: 1.8rem;
   cursor: pointer;
   line-height: 1;
@@ -250,6 +252,7 @@
   width: 100%;
   border-radius: 6px;
   overflow: hidden;
+  border: 1px solid var(--border);
 }
 
 .promoImg {
@@ -268,24 +271,27 @@
 .promoContent h5 {
   font-size: 1.4rem;
   font-weight: 800;
-  color: #0a848c;
+  color: var(--primary);
   margin-bottom: 0.8rem;
+  font-family: var(--font-fjalla), sans-serif;
 }
 
 .promoContent p {
-  color: #444444;
+  color: var(--text-secondary);
   font-size: 1rem;
   line-height: 1.5;
+  font-family: var(--font-raleway), sans-serif;
 }
 
 .promoCta {
-  background: #10b981 !important;
-  color: #ffffff !important;
+  background: var(--gradient-gold) !important;
+  color: #000000 !important;
   border-radius: 6px !important;
   font-weight: 700 !important;
+  box-shadow: var(--shadow-gold) !important;
 }
 .promoCta:hover {
-  background: #059669 !important;
+  background: var(--primary-hover) !important;
 }
 
 /* 3. Fun & Crash Grid */

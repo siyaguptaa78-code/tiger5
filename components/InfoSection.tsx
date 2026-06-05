@@ -11,103 +11,204 @@ export default function InfoSection() {
       <div className="container">
         
         {/* ==========================================
-            PART 1: OFFICIAL REDDY ANNA BOOK ID PROVIDER (Screenshot 3)
+            SECTION 1: BASICS OF TIGER365 PRO ID
             ========================================== */}
         <div className={styles.introBox}>
           <h2 className={styles.introTitle}>
-            Official Reddy Anna Book ID Provider Website
+            Basics of Tiger365 Pro ID
           </h2>
           <div className={styles.introTextWrapper}>
             <p className={styles.introParagraph}>
-              Reddy Anna Book is one of the most trusted platforms for online betting and gaming in India, offering a smooth and secure experience for users. By getting your ID from an official provider, you ensure fast access, safe transactions, and uninterrupted betting during major events like IPL and international matches.
+              A need of betting ID has become an important part while placing bets and enjoying your favorite games. Tiger365 pro ID is made in such a way that it lets users feel safe and excited at the same time. It lets users have a verified identity, which acts as their digital account. It will keep things organized and fair. This article will act as your go-through guide, which will help you understand the Tiger365 pro ID better.
             </p>
             <p className={styles.introParagraph}>
-              The platform provides instant ID creation, easy login, and full support through WhatsApp and dedicated customer service. Whether you want to download the app, get your ID instantly, or connect with support, everything is designed for user convenience with fast withdrawals and real-time betting.
+              Before getting an ID, we need to first know about the basics of Tiger365 Pro. Usually, when people were not aware of the concept of betting IDs, they played without an identification, which was not safe as well as user-friendly. But with these online platforms nowadays, people are provided with IDs. One of them is Tiger365 Pro ID.
+            </p>
+            <p className={styles.introParagraph}>
+              This acts as your personal identification at an online betting platform. It works like your digital account, where you can handle everything. The purpose behind providing a betting ID to every user is to keep everything secure and in a structured format.
+            </p>
+            <p className={styles.introParagraph}>
+              This ID may help a user to build more trust and loyalty towards this platform. For a beginner, it must be very important to understand the online identification system through this ID. It records every detail of your account, which includes game updates, transactions, data records, etc. The process is pretty simple and not very complicated. It can be used by any of the users.
             </p>
           </div>
 
-          {/* Action Buttons Row 1 */}
           <div className={styles.btnRowOne}>
             <WhatsAppButton className="btn-red-action">
-              📲 Download Reddy Anna App
+              📲 Create Tiger365 Pro ID
             </WhatsAppButton>
             <WhatsAppButton className="btn-green-action">
               💬 Get ID on WhatsApp
             </WhatsAppButton>
             <WhatsAppButton className="btn-gray-action">
-              📞 Contact Reddy Anna Support
-            </WhatsAppButton>
-          </div>
-
-          {/* Action Buttons Row 2 */}
-          <div className={styles.btnRowTwo}>
-            <WhatsAppButton className={styles.largeChatBtn}>
-              💬 Chat Support on WhatsApp
+              📞 Contact Official Support
             </WhatsAppButton>
           </div>
         </div>
 
         {/* ==========================================
-            PART 2: WHAT IS REDDY ANNA ID (Screenshot 5)
+            SECTION 2: LEARNING THE WORKING OF TIGER365 PRO ID
             ========================================== */}
         <div className={styles.idSectionBox}>
           <div className={styles.twoColumnGrid}>
-            
-            {/* Left Column: Image Asset */}
             <div className={styles.imageColumn}>
               <div className={styles.imageWrapper}>
                 <Image
-                  src="https://reddysports.co/wp-content/uploads/2026/05/What-Is-Reddy-Anna-ID-1536x896.jpg"
-                  alt="What is Reddy Anna ID"
-                  width={1536}
-                  height={896}
+                  src={SITE_CONFIG.images.heroBanner}
+                  alt="Working of Tiger365 Pro ID"
+                  width={1000}
+                  height={500}
                   className={styles.idImg}
-                  priority
                 />
               </div>
             </div>
 
-            {/* Right Column: Features Checklist */}
             <div className={styles.textColumn}>
               <div className={styles.headerHighlight}>
-                <h3>What Is Reddy Anna ID?</h3>
+                <h3>Learning the Working of Tiger365 Pro ID</h3>
               </div>
-              
               <p className={styles.idLeadText}>
-                Your <strong>Reddy Anna ID</strong> is your personal key to access all games and betting markets on our platform.
+                Like the basics of tiger365 pro ID, we will move further to working on this ID. Hence, following the steps mentioned below will help a user to know how it works:
               </p>
-              <p className={styles.idSubLeadText}>
-                With one verified ID, you can:
-              </p>
+              
+              <ul className={styles.checklist}>
+                <li>
+                  <span className={styles.bulletCheck}>1.</span>
+                  <span><strong>Registration –</strong> You need to create your account by filling in your personal details such as name, DOB, email and mobile number, which remains safe in your ID. Moreover, it helps users to identify themselves on this platform.</span>
+                </li>
+                <li>
+                  <span className={styles.bulletCheck}>2.</span>
+                  <span><strong>ID Generation –</strong> After registration, you are provided with a personal user ID and password to create. This ID is automatically generated by the platform.</span>
+                </li>
+                <li>
+                  <span className={styles.bulletCheck}>3.</span>
+                  <span><strong>Verification and Login –</strong> Creating a user ID is not sufficient. Before any login or transaction, the platform ensures that a user is genuine and verifies their identity.</span>
+                </li>
+                <li>
+                  <span className={styles.bulletCheck}>4.</span>
+                  <span><strong>System Record Maintenance –</strong> The platform ensures that even minor activities such as login details, game activities, live records and all the data remain secure and saved.</span>
+                </li>
+                <li>
+                  <span className={styles.bulletCheck}>5.</span>
+                  <span><strong>Ensuring Safety and Clarity –</strong> The ID makes sure that the user feels safe while using it. One can experience a smooth and stress-free experience with tiger365 pro ID. It keeps all the transactions and credentials encrypted and secured.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
+        {/* ==========================================
+            SECTION 3: ADVANTAGES YOU SHOULD KNOW ABOUT TIGER365 PRO ID
+            ========================================== */}
+        <div className={styles.idSectionBox}>
+          <div className={styles.twoColumnGrid}>
+            <div className={styles.textColumn}>
+              <div className={styles.headerHighlight}>
+                <h3>Advantages of Tiger365 Pro ID</h3>
+              </div>
+              <p className={styles.idLeadText}>
+                Everybody needs an ID that gives them lots of benefits. Here are the core advantages you will enjoy with your Tiger365 Pro ID:
+              </p>
+              
               <ul className={styles.checklist}>
                 <li>
                   <span className={styles.bulletCheck}>✓</span>
-                  <span>Bet on <strong>cricket, football, kabaddi, and tennis</strong>.</span>
+                  <span><strong>Personal Identification –</strong> Once a user has created their ID, they can use it anywhere, anytime, with their own name and records.</span>
                 </li>
                 <li>
                   <span className={styles.bulletCheck}>✓</span>
-                  <span>Play <strong>live casino games</strong> like Teen Patti, Poker, and Roulette.</span>
+                  <span><strong>Track Records Anytime –</strong> Whether logged out, or on another device, or in case of any network issue, one can redirect back to where they left. Data, transactions, and login activity are updated.</span>
                 </li>
                 <li>
                   <span className={styles.bulletCheck}>✓</span>
-                  <span>Access your <strong>betting dashboard</strong> to manage funds, bonuses, and bet history.</span>
+                  <span><strong>Fast Login –</strong> Login can be done anywhere, anytime by simply entering your user ID and password. Information is safely saved in the platform itself for effortless access.</span>
                 </li>
                 <li>
                   <span className={styles.bulletCheck}>✓</span>
-                  <span>Deposit and withdraw money <strong>instantly via UPI or NetBanking</strong>.</span>
-                </li>
-                <li>
-                  <span className={styles.bulletCheck}>✓</span>
-                  <span>Receive exclusive <strong>promotions linked to your Reddy Anna account</strong>.</span>
+                  <span><strong>Risk-Proof and Protected Transactions –</strong> Fund management is handled securely. Every deposit or withdrawal is recorded and alert notifications are sent instantly.</span>
                 </li>
               </ul>
-
-              <p className={styles.idFooterText}>
-                Every Reddy Anna ID is secured through OTP and KYC, ensuring that your account and funds stay protected at all times.
-              </p>
             </div>
 
+            <div className={styles.imageColumn}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src={SITE_CONFIG.images.registrationBanner}
+                  alt="Advantages of Tiger365 Pro ID"
+                  width={1000}
+                  height={500}
+                  className={styles.idImg}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* ==========================================
+            SECTION 4: LIST OF THINGS INSIDE THE PLATFORM
+            ========================================== */}
+        <div className={styles.idSectionBox}>
+          <div className={styles.twoColumnGrid}>
+            <div className={styles.imageColumn}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src={SITE_CONFIG.images.banners.banner1.src}
+                  alt="Inside the Platform"
+                  width={SITE_CONFIG.images.banners.banner1.width}
+                  height={SITE_CONFIG.images.banners.banner1.height}
+                  className={styles.idImg}
+                />
+              </div>
+            </div>
+
+            <div className={styles.textColumn}>
+              <div className={styles.headerHighlight}>
+                <h3>List of Things Inside the Platform</h3>
+              </div>
+              <p className={styles.idLeadText}>
+                The official Tiger365 Pro ID platform offers a rich collection of games and betting opportunities:
+              </p>
+              
+              <ul className={styles.checklist}>
+                <li>
+                  <span className={styles.bulletCheck}>•</span>
+                  <span><strong>Sports Exchange –</strong> A wide choice of sporting events for live betting, including Basketball, Cricket, Tennis, and more.</span>
+                </li>
+                <li>
+                  <span className={styles.bulletCheck}>•</span>
+                  <span><strong>Casino Exchange –</strong> A collection of casino games such as Poker, Blackjack, and Roulette.</span>
+                </li>
+                <li>
+                  <span className={styles.bulletCheck}>•</span>
+                  <span><strong>Live Gaming Experience –</strong> Enjoy competitive games and live sports betting with real-time score updates and multiplier levels.</span>
+                </li>
+                <li>
+                  <span className={styles.bulletCheck}>•</span>
+                  <span><strong>Safety Concerns –</strong> Full protection, transparency, and instant verification for every user ledger.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* ==========================================
+            SECTION 5: CONCLUDING TIGER365 PRO ID
+            ========================================== */}
+        <div className={styles.idSectionBox}>
+          <div className={styles.introBox} style={{ marginBottom: 0, marginTop: '2rem' }}>
+            <h3 className={styles.introTitle} style={{ fontSize: '2rem' }}>
+              Concluding Tiger365 Pro ID
+            </h3>
+            <p className={styles.introParagraph}>
+              To sum up, you have learnt the basics, the workings, and how it’s useful. The platform ensures that users gain a trustworthy and risk-free experience. It makes users trust and gives them clarity before using this system.
+            </p>
+            <p className={styles.introParagraph} style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
+              For more details, stay tuned with Genuinebettingids.com
+            </p>
+            <div className={styles.btnRowTwo}>
+              <WhatsAppButton className={styles.largeChatBtn}>
+                💬 Chat with Us on WhatsApp for Instant ID
+              </WhatsAppButton>
+            </div>
           </div>
         </div>
 

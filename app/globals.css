@@ -1,21 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
 
 :root {
-  --background: #0f0f11;
-  --foreground: #f0f0f0;
+  --background: #000000;
+  --foreground: #ffffff;
   
   --text-primary: #ffffff;
-  --text-secondary: #bbbbbb;
-  --text-muted: #888888;
+  --text-secondary: rgba(255,255,255,0.8);
+  --text-muted: rgba(255,255,255,0.6);
   
-  --primary: #d4af37; /* Premium Gold default */
-  --primary-hover: #f1c40f;
-  --primary-rgb: 212, 175, 55; /* Default Gold RGB */
+  --primary: #f3c242; /* Premium Gold default */
+  --primary-hover: #f2b827;
+  --primary-rgb: 243, 194, 66; /* Default Gold RGB */
   
-  --secondary: #1a1a1f; /* Charcoal Card Background */
-  --secondary-hover: #232329;
+  --secondary: #131313; /* Charcoal Card Background */
+  --secondary-hover: #1b1b1b;
   
-  --border: #333333;
+  --border: #222222;
   --border-light: rgba(var(--primary-rgb), 0.3); /* Dynamically computed tint border */
 
   --gradient-gold: linear-gradient(135deg, var(--primary) 0%, var(--primary-hover) 100%); /* Dynamically computed gradient */
@@ -43,14 +42,15 @@ body {
   overflow-x: hidden;
   background-color: var(--background);
   color: var(--foreground);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-raleway), 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   scroll-behavior: smooth;
   line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
+  font-family: var(--font-fjalla), 'Playfair Display', serif;
+  font-weight: 400;
+  text-transform: uppercase;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
@@ -160,8 +160,8 @@ button {
 
 /* Custom Themed Action Buttons */
 .btn-red-action {
-  background-color: #a90a0a;
-  color: #ffffff;
+  background: var(--gradient-gold);
+  color: #000000;
   font-weight: 700;
   padding: 12px 24px;
   border-radius: 6px;
@@ -172,19 +172,21 @@ button {
   gap: 10px;
   transition: var(--transition);
   text-transform: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-gold);
+  border: none;
 }
 .btn-red-action:hover {
-  background-color: #cc1111;
+  background: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(169, 10, 10, 0.2);
+  box-shadow: 0 6px 15px rgba(var(--primary-rgb), 0.3);
 }
 
 .btn-green-action {
-  background-color: #10b981;
-  color: #ffffff;
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
   font-weight: 700;
-  padding: 12px 24px;
+  padding: 10px 22px;
   border-radius: 6px;
   font-size: 1rem;
   display: inline-flex;
@@ -193,19 +195,20 @@ button {
   gap: 10px;
   transition: var(--transition);
   text-transform: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .btn-green-action:hover {
-  background-color: #059669;
+  background: var(--primary);
+  color: #000000;
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(16, 185, 129, 0.2);
+  box-shadow: var(--shadow-gold);
 }
 
 .btn-gray-action {
-  background-color: #2b2b30;
-  color: #ffffff;
+  background-color: var(--secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
   font-weight: 700;
-  padding: 12px 24px;
+  padding: 11px 23px;
   border-radius: 6px;
   font-size: 1rem;
   display: inline-flex;
@@ -214,12 +217,12 @@ button {
   gap: 10px;
   transition: var(--transition);
   text-transform: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .btn-gray-action:hover {
-  background-color: #1f1f23;
+  background-color: var(--secondary-hover);
+  border-color: var(--primary);
+  color: var(--primary);
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive adjustments */

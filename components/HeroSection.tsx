@@ -8,45 +8,45 @@ export default function HeroSection() {
     <section className={styles.hero} id="home">
       <div className={`container ${styles.content}`}>
         <h1 className={`${styles.title} animate-fade-in`}>
-          <span className={styles.accent}>{SITE_CONFIG.brand.name}</span> – Get Your Official {SITE_CONFIG.brand.name} ID Instantly
+          TIGER365 PRO ID – <span className={styles.accent}>ULTIMATE GUIDE</span> TO ONLINE BETTING
         </h1>
         
         <div className={`${styles.bannerWrapper} animate-fade-in animate-delay-1`}>
           <Image 
             src={SITE_CONFIG.images.heroBanner} 
-            alt={`${SITE_CONFIG.brand.name} Official Platform`} 
-            width={1698}
-            height={608}
+            alt="Tiger365 Pro ID Official Banner" 
+            width={1000}
+            height={500}
             priority
             className={styles.mainBanner}
           />
         </div>
         
         <p className={`${styles.subtitle} animate-fade-in animate-delay-2`}>
-          Join India’s leading cricket betting ID platform since 2010. Enjoy instant access, safe payments, special bonuses & 24/7 support.
+          A need of betting ID has become an important part while placing bets and enjoying your favorite games. Tiger365 pro ID is made in such a way that it lets users feel safe and excited at the same time.
         </p>
         
         <div className={`${styles.ctaGroup} animate-fade-in animate-delay-3`}>
           <WhatsAppButton className={styles.mainCta}>
-            👉 Get Reddy Anna ID Here 👈
+            👉 Get Tiger365 Pro ID Here 👈
           </WhatsAppButton>
           <WhatsAppButton variant="outline" className={styles.secondaryCta}>
-            👉 Get Online Betting ID 👈
+            👉 Contact Genuine Betting IDs 👈
           </WhatsAppButton>
         </div>
         
         <div className={`${styles.stats} animate-fade-in animate-delay-3`}>
           <div className={styles.statItem}>
-            <h3>50,000+</h3>
-            <p>Active Users</p>
+            <h3>100,000+</h3>
+            <p>Active Bettors</p>
           </div>
           <div className={styles.statItem}>
-            <h3>200+</h3>
-            <p>Offline Branches</p>
+            <h3>24/7</h3>
+            <p>Live Chat Support</p>
           </div>
           <div className={styles.statItem}>
             <h3>60 Sec</h3>
-            <p>ID Activation</p>
+            <p>ID Generation</p>
           </div>
         </div>
       </div>

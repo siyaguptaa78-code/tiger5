@@ -17,14 +17,14 @@ const CASINO_LOBBIES = [
 ];
 
 const SPORTS_LOBBIES = [
-  { name: "TENNIS", image: "https://reddysports.co/wp-content/uploads/2026/02/reddy-anna-sports-betting.webp", gradient: "linear-gradient(135deg, #8b2b1a 0%, #d46337 100%)", icon: "🎾" },
-  { name: "VOLLEYBALL", image: "https://reddysports.co/wp-content/uploads/2026/02/reddy-anna-sports-betting.webp", gradient: "linear-gradient(135deg, #59551c 0%, #a49646 100%)", icon: "🏐" },
-  { name: "BASKETBALL", image: "https://reddysports.co/wp-content/uploads/2026/02/reddy-anna-sports-betting.webp", gradient: "linear-gradient(135deg, #6c4e20 0%, #b28a47 100%)", icon: "🏀" },
-  { name: "E SPORTS", image: "https://reddysports.co/wp-content/uploads/2026/02/reddy-anna-sports-betting.webp", gradient: "linear-gradient(135deg, #1f6b3e 0%, #4db579 100%)", icon: "🎮" },
-  { name: "WINNER CUP", image: "https://reddysports.co/wp-content/uploads/2026/02/reddy-anna-sports-betting.webp", gradient: "linear-gradient(135deg, #b58d2a 0%, #ffd46f 100%)", icon: "🏆" },
-  { name: "ELECTION", image: "https://reddysports.co/wp-content/uploads/2026/03/west-bengal-assembly-election-2026-reddy-anna-betting.jpg", gradient: "linear-gradient(135deg, #0a848c 0%, #29cfdc 100%)", icon: "🗳️", badge: "Live" },
-  { name: "CRICKET", image: "https://reddysports.co/wp-content/uploads/2026/02/reddy-anna-sports-betting.webp", gradient: "linear-gradient(135deg, #5c2020 0%, #a24c4c 100%)", icon: "🏏" },
-  { name: "FOOTBALL", image: "https://reddysports.co/wp-content/uploads/2026/02/reddy-anna-sports-betting.webp", gradient: "linear-gradient(135deg, #0e5b56 0%, #2ea098 100%)", icon: "⚽" },
+  { name: "TENNIS", image: "https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp", gradient: "linear-gradient(135deg, #8b2b1a 0%, #d46337 100%)", icon: "🎾" },
+  { name: "VOLLEYBALL", image: "https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp", gradient: "linear-gradient(135deg, #59551c 0%, #a49646 100%)", icon: "🏐" },
+  { name: "BASKETBALL", image: "https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp", gradient: "linear-gradient(135deg, #6c4e20 0%, #b28a47 100%)", icon: "🏀" },
+  { name: "E SPORTS", image: "https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp", gradient: "linear-gradient(135deg, #1f6b3e 0%, #4db579 100%)", icon: "🎮" },
+  { name: "WINNER CUP", image: "https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp", gradient: "linear-gradient(135deg, #b58d2a 0%, #ffd46f 100%)", icon: "🏆" },
+  { name: "ELECTION", image: "https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp", gradient: "linear-gradient(135deg, #0a848c 0%, #29cfdc 100%)", icon: "🗳️", badge: "Live" },
+  { name: "CRICKET", image: "https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp", gradient: "linear-gradient(135deg, #5c2020 0%, #a24c4c 100%)", icon: "🏏" },
+  { name: "FOOTBALL", image: "https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp", gradient: "linear-gradient(135deg, #0e5b56 0%, #2ea098 100%)", icon: "⚽" },
 ];
 
 const FUN_LOBBIES = [
@@ -38,7 +38,7 @@ export default function GameLobbies() {
   const [showPromo, setShowPromo] = useState<string | null>(null);
 
   const getWhatsAppLink = (lobbyName: string) => {
-    const text = encodeURIComponent(`Hi Reddy Anna, I want to access the ${lobbyName} Lobby! Please set up my official betting ID.`);
+    const text = encodeURIComponent(`Hi, I want to access the ${lobbyName} Lobby! Please set up my official Tiger365 Pro ID.`);
     return `${SITE_CONFIG.whatsappLink}?text=${text}`;
   };
 
@@ -46,10 +46,10 @@ export default function GameLobbies() {
     <section className={`section-padding ${styles.section}`} id="lobbies">
       <div className="container">
         <h2 className="section-title text-center">
-          Official <span>Reddy Anna Book</span> Exchange Lobbies
+          Official <span>Tiger365 Pro</span> Exchange Lobbies
         </h2>
         <p className={`text-center ${styles.subtitle}`}>
-          Click on any lobby banner below to get instant access and start playing with India's most secure book ID.
+          Click on any lobby banner below to get instant access and start playing with India's most secure betting ID.
         </p>
 
         {/* 1. Casino Lobbies */}
@@ -109,8 +109,8 @@ export default function GameLobbies() {
             <div className={styles.promoBody}>
               <div className={styles.promoImageWrapper}>
                 <img
-                  src="https://reddysports.co/wp-content/uploads/2026/03/west-bengal-assembly-election-2026-reddy-anna-betting.jpg"
-                  alt="West Bengal Election Betting"
+                  src="https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp"
+                  alt="Assembly Election Betting"
                   className={styles.promoImg}
                 />
               </div>

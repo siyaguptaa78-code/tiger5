@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: "reddysports.co",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "genuinebettingids.com",
+        pathname: "/**",
+      },
     ],
   },
 };

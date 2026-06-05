@@ -11,9 +11,9 @@ export default function Bonuses() {
 
         <div className={styles.grid}>
           <div className={styles.card}>
-            <div className={styles.badge}>CODE: REDDY500</div>
+            <div className={styles.badge}>CODE: TIGER500</div>
             <h3>500% Welcome Bonus</h3>
-            <p>The highest welcome bonus in the Indian cricket betting space. Deposit up to ₹50,000.</p>
+            <p>The highest welcome bonus in the Indian online betting space. Deposit up to ₹50,000.</p>
             <ul className={styles.list}>
               <li>Deposit ₹500 → Play with ₹3,000</li>
               <li>Deposit ₹1,000 → Play with ₹6,000</li>

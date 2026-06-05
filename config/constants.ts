@@ -1,109 +1,57 @@
 export const SITE_CONFIG = {
   brand: {
-    name: "Reddy Anna",
-    logoText1: "REDDY",
-    logoText2: "ANNA",
-    logoSub: "— SINCE 2010 —"
+    name: "Genuine Betting IDs",
+    logoText1: "GENUINE",
+    logoText2: "BETTING IDS",
+    logoSub: "— TIGER365 PRO ID —"
   },
 
   // ==========================================
   // THEME CONFIGURATION & PRESETS
   // ==========================================
-  // To change the color theme of the website, uncomment one of the presets below
-  // and comment out the active one. Ensure you update all five properties.
-
   theme: {
-    // PRESET 1: Classic Premium Gold (Dark)
-    // primary: "#d4af37",
-    // primaryHover: "#f1c40f",
-    // primaryRgb: "212, 175, 55",
-    // background: "#0f0f11",
-    // secondary: "#1a1a1f",
-    // foreground: "#f0f0f0",
-    // textPrimary: "#ffffff",
-    // textSecondary: "#bbbbbb",
-    // textMuted: "#888888",
-    // border: "#333333",
-
-    // PRESET 2: Vibrant Blue (Dark)
-    // primary: "#2499ed",
-    // primaryHover: "#4db3f6",
-    // primaryRgb: "36, 153, 237",
-    // background: "#0a0c12",
-    // secondary: "#111622",
-    // foreground: "#f0f0f0",
-    // textPrimary: "#ffffff",
-    // textSecondary: "#bbbbbb",
-    // textMuted: "#888888",
-    // border: "#222a3a",
-
-    // PRESET 3: Emerald Green (Dark)
-    // primary: "#10b981",
-    // primaryHover: "#34d399",
-    // primaryRgb: "16, 185, 129",
-    // background: "#060807",
-    // secondary: "#0d1310",
-    // foreground: "#f0f0f0",
-    // textPrimary: "#ffffff",
-    // textSecondary: "#bbbbbb",
-    // textMuted: "#888888",
-    // border: "#1f2a24",
-
-    // PRESET 4: Crimson Red (Dark)
-    // primary: "#ef4444",
-    // primaryHover: "#f87171",
-    // primaryRgb: "239, 68, 68",
-    // background: "#0f0808",
-    // secondary: "#1c1010",
-    // foreground: "#f0f0f0",
-    // textPrimary: "#ffffff",
-    // textSecondary: "#bbbbbb",
-    // textMuted: "#888888",
-    // border: "#3a2222",
-
-    // PRESET 5: Custom Maroon & Gold Theme (Active)
-    primary: "#6b1201",
-    primaryHover: "#8c1902",
-    primaryRgb: "107, 18, 1",
-    background: "#ffffff",
-    secondary: "#ffffff",
-    foreground: "#111111",
-    textPrimary: "#111111",
-    textSecondary: "#333333",
-    textMuted: "#666666",
-    border: "#ebd5d5",
+    // Reference Site Color Palette (Black & Gold/Yellow)
+    primary: "#f3c242",
+    primaryHover: "#f2b827",
+    primaryRgb: "243, 194, 66",
+    background: "#000000",
+    secondary: "#131313",
+    foreground: "#ffffff",
+    textPrimary: "#ffffff",
+    textSecondary: "rgba(255, 255, 255, 0.8)",
+    textMuted: "rgba(255, 255, 255, 0.6)",
+    border: "#222222",
   },
 
-  description: "Join Reddy Anna – India’s leading cricket betting ID platform. Enjoy instant access, safe payments, special bonuses & 24*7 support.",
-  whatsappNumber: "918437261975",
-  whatsappLink: "https://wa.me/918437261975",
-  url: "https://reddysports.co/",
+  description: "Explore Tiger365 Pro ID by knowing the ways to register, games, live betting, benefits, safety concerns, and what's inside.",
+  whatsappNumber: "918872189331",
+  whatsappLink: "https://wa.me/918872189331",
+  url: "https://genuinebettingids.com/tiger365-pro-id/",
 
   // ==========================================
   // IMAGES CONFIGURATION
   // ==========================================
-  // Customize any image path here to update it across the site instantly.
   images: {
-    heroBanner: "https://reddysports.co/wp-content/uploads/2026/02/reddy-anna-sports-betting.webp",
-    registrationBanner: "https://reddysports.co/wp-content/uploads/2026/02/reddy-anna-greyhound-racing.webp",
+    heroBanner: "https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp",
+    registrationBanner: "https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp",
     banners: {
       banner1: {
-        src: "https://reddysports.co/wp-content/uploads/2026/03/west-bengal-assembly-election-2026-reddy-anna-betting.jpg",
-        alt: "West Bengal Election Betting live on Reddy Anna",
-        width: 1456,
-        height: 720
+        src: "https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp",
+        alt: "Tiger365 Pro ID Ultimate Guide to Online Betting",
+        width: 1000,
+        height: 500
       },
       banner2: {
-        src: "/banners/banner5.png",
+        src: "https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp",
         alt: "Bonuses and Rewards Banner",
-        width: 1456,
-        height: 720
+        width: 1000,
+        height: 500
       },
       banner3: {
-        src: "/banners/banner6.png",
+        src: "https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp",
         alt: "Join Now Banner",
-        width: 1456,
-        height: 720
+        width: 1000,
+        height: 500
       }
     }
   },

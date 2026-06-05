@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Raleway, Fjalla_One } from "next/font/google";
 import "./globals.css";
 import { SITE_CONFIG } from "@/config/constants";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
+const raleway = Raleway({ subsets: ["latin"], variable: "--font-raleway" });
+const fjallaOne = Fjalla_One({ weight: "400", subsets: ["latin"], variable: "--font-fjalla" });
 
 export const metadata: Metadata = {
-  title: `${SITE_CONFIG.brand.name} – Official ID | Get ${SITE_CONFIG.brand.name} Book ID Online`,
+  title: `Tiger365 Pro ID – Ultimate Guide to Online Betting | ${SITE_CONFIG.brand.name}`,
   description: SITE_CONFIG.description,
-  keywords: ["Reddy Anna", "Reddy Book", "Anna Book", "Cricket Betting ID", "IPL Betting ID", "Online Betting India"],
+  keywords: ["Tiger365 Pro ID", "Genuine Betting IDs", "Tiger365 Pro ID registration", "Tiger365 Pro", "Online Betting India", "Cricket Betting ID"],
   openGraph: {
-    title: `${SITE_CONFIG.brand.name} – Official ID`,
+    title: `Tiger365 Pro ID – Ultimate Guide to Online Betting`,
     description: SITE_CONFIG.description,
     url: SITE_CONFIG.url,
     siteName: SITE_CONFIG.brand.name,
     images: [
       {
-        url: "/hero_bg.png",
+        url: "https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp",
         width: 1200,
         height: 630,
         alt: `${SITE_CONFIG.brand.name} Official`,
@@ -36,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body 
-        className={`${inter.variable} ${playfair.variable}`}
+        className={`${raleway.variable} ${fjallaOne.variable}`}
         style={{
           '--primary': SITE_CONFIG.theme.primary,
           '--primary-hover': SITE_CONFIG.theme.primaryHover,

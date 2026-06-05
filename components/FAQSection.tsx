@@ -6,11 +6,11 @@ import { SITE_CONFIG } from "@/config/constants";
 const faqs = [
   {
     q: `What is ${SITE_CONFIG.brand.name}?`,
-    a: `${SITE_CONFIG.brand.name} is India’s most trusted online cricket betting ID platform, active since 2010. It provides members with instant ID activation, live sports betting markets, and fast withdrawals.`
+    a: `${SITE_CONFIG.brand.name} is India’s leading online betting ID platform, offering premium access to Tiger365 Pro ID and other top exchanges. It provides members with instant ID activation, live sports betting markets, and fast withdrawals.`
   },
   {
-    q: `How do I get a ${SITE_CONFIG.brand.name} ID?`,
-    a: `Click “Get New ID”, enter your WhatsApp number, and receive your ID within 60 seconds. No documents required for registration.`
+    q: `How do I get a Tiger365 Pro ID?`,
+    a: `Click any “Get ID” or WhatsApp button on our page, enter your details, and receive your login credentials via WhatsApp within 60 seconds. No documents required for registration.`
   },
   {
     q: "What is the minimum deposit?",

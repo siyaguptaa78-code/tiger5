@@ -1,50 +1,51 @@
 import WhatsAppButton from "./WhatsAppButton";
 import styles from "./Features.module.css";
+import { SITE_CONFIG } from "@/config/constants";
 
 const featuresData = [
   {
-    title: "Established Reputation",
-    description: "Backed by over 10 years of excellence in the betting industry.",
+    title: "Verified Digital Identity",
+    description: "Your official ID acts as a secure, verified digital account to keep betting organized and fair.",
     icon: "✅"
   },
   {
-    title: "Instant Reddy Anna ID",
-    description: "Register and start betting in under 2 minutes.",
+    title: "Instant Tiger365 Pro ID",
+    description: "Register and start betting on your favorite games in under 2 minutes.",
     icon: "⚡"
   },
   {
-    title: "Fast Withdrawals",
-    description: "Same-day UPI and wallet transfers with no hidden fees.",
+    title: "Fast Payouts",
+    description: "Same-day instant UPI and wallet transfers with zero delay and complete clarity.",
     icon: "💸"
   },
   {
-    title: "Wide Betting Coverage",
-    description: "Cricket, football, kabaddi, tennis, esports, and live casinos.",
+    title: "Wide Betting Options",
+    description: "Access Sports Exchange (Cricket, Tennis, Basketball) and Casino Exchange (Poker, Blackjack, Roulette).",
     icon: "🎯"
   },
   {
-    title: "100% Secure Platform",
-    description: "SSL encryption, OTP verification, and full KYC compliance.",
+    title: "Encrypted Transactions",
+    description: "Funds and credentials remain encrypted and protected against suspicious activities.",
     icon: "🔒"
   },
   {
-    title: "Mobile-Friendly Access",
-    description: "Play on the go with the Reddy Anna App.",
+    title: "Track Records Anytime",
+    description: "Your login records, data, and balance history are updated in real-time, even if you switch devices.",
     icon: "📱"
   },
   {
-    title: "Exciting Bonuses",
-    description: "Welcome offers, cashback rewards, and festival promotions.",
+    title: "Exclusive Live Promos",
+    description: "Get welcome offers, color prediction bonuses, and live sports promotions.",
     icon: "🎁"
   },
   {
-    title: "24/7 Support",
-    description: "Reach us anytime via WhatsApp, Telegram, or live chat.",
+    title: "24/7 Live Support",
+    description: "Reach our support team anytime directly via WhatsApp chat for instant troubleshooting.",
     icon: "🤝"
   },
   {
     title: "Responsible Gaming",
-    description: "Tools for setting limits, self-exclusion, and safe betting practices.",
+    description: "Ensuring a safe, risk-free, and healthy gaming experience for all members.",
     icon: "🧠"
   }
 ];
@@ -54,10 +55,10 @@ export default function Features() {
     <section className={`section-padding ${styles.featuresSection}`} id="services">
       <div className="container">
         <h2 className="section-title text-center">
-          Why Choose <span>Reddy Anna</span>
+          Why Choose <span>{SITE_CONFIG.brand.name}</span>
         </h2>
         <p className={`text-center ${styles.subtitle}`}>
-          Experience the premium difference with India's most trusted online betting platform.
+          Experience the ultimate guide to online betting with Tiger365 Pro ID.
         </p>
 
         <div className={styles.grid}>
@@ -72,7 +73,7 @@ export default function Features() {
 
         <div className={styles.ctaWrapper}>
           <WhatsAppButton className={styles.largeCta}>
-            Get Your Reddy Anna ID Instantly
+            Get Your Tiger365 Pro ID Instantly
           </WhatsAppButton>
         </div>
       </div>
