@@ -5,47 +5,47 @@ import { SITE_CONFIG } from "@/config/constants";
 const featuresData = [
   {
     title: "Verified Digital Identity",
-    description: "Your official ID acts as a secure, verified digital account to keep betting organized and fair.",
+    description: "Your official ID offers an authorized, trustworthy digital account that keeps all betting organized and fair.",
     icon: "✅"
   },
   {
     title: "Instant Tiger365 Pro ID",
-    description: "Register and start betting on your favorite games in under 2 minutes.",
+    description: "Register and start betting on your favorite games in your 2 minutes. Get your verified betting ID with us today!",
     icon: "⚡"
   },
   {
     title: "Fast Payouts",
-    description: "Same-day instant UPI and wallet transfers with zero delay and complete clarity.",
+    description: "Same-day instant UPI and wallet transfers with zero delays and complete transparency.",
     icon: "💸"
   },
   {
     title: "Wide Betting Options",
-    description: "Access Sports Exchange (Cricket, Tennis, Basketball) and Casino Exchange (Poker, Blackjack, Roulette).",
+    description: "Sports Exchange (Cricket, Tennis, Basketball) + Casino Exchange (Poker, Blackjack, Roulette)",
     icon: "🎯"
   },
   {
     title: "Encrypted Transactions",
-    description: "Funds and credentials remain encrypted and protected against suspicious activities.",
+    description: "Funds and account credentials are encrypted for ultimate security and to protect against unauthorized access.",
     icon: "🔒"
   },
   {
     title: "Track Records Anytime",
-    description: "Your login records, data, and balance history are updated in real-time, even if you switch devices.",
+    description: "Data, login credentials and balance amount updated in real-time. Even if you log out, login from another device and access any game.",
     icon: "📱"
   },
   {
     title: "Exclusive Live Promos",
-    description: "Get welcome offers, color prediction bonuses, and live sports promotions.",
+    description: "Enjoy daily welcome offers, color prediction bonuses and live game promotions.",
     icon: "🎁"
   },
   {
     title: "24/7 Live Support",
-    description: "Reach our support team anytime directly via WhatsApp chat for instant troubleshooting.",
+    description: "Chat with our customer support executives anytime directly on WhatsApp for instant assistance.",
     icon: "🤝"
   },
   {
     title: "Responsible Gaming",
-    description: "Ensuring a safe, risk-free, and healthy gaming experience for all members.",
+    description: "Keeps you safe and promotes a risk-free betting environment.",
     icon: "🧠"
   }
 ];
@@ -58,7 +58,7 @@ export default function Features() {
           Why Choose <span>{SITE_CONFIG.brand.name}</span>
         </h2>
         <p className={`text-center ${styles.subtitle}`}>
-          Experience the ultimate guide to online betting with Tiger365 Pro ID.
+          A need of betting ID has become a necessary part while placing bets and enjoying your favorite games. Tiger365 pro ID is created in such a way that it provides users with the best feeling of security and excitement.
         </p>
 
         <div className={styles.grid}>

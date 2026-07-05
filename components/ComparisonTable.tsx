@@ -6,10 +6,10 @@ export default function ComparisonTable() {
     <section className={`section-padding ${styles.section}`}>
       <div className="container">
         <h2 className="section-title text-center">
-          <span>{SITE_CONFIG.brand.name}</span> vs Other Platforms
+          Genuine Betting IDs vs Other Id Providers
         </h2>
         <p className={`text-center ${styles.subtitle}`}>
-          The Indian online betting space has many platforms, but trust is the single most important factor. Here is how we compare.
+          Indian online betting space has seen a surge in new platforms, but trust remains the ultimate currency. Take a detailed look at how we stack up against the competition.
         </p>
 
         <div className={styles.tableWrapper}>
@@ -17,15 +17,15 @@ export default function ComparisonTable() {
             <thead>
               <tr>
                 <th>Feature</th>
-                <th className={styles.highlightCol}>{SITE_CONFIG.brand.name}</th>
-                <th>Typical Competitors</th>
+                <th className={styles.highlightCol}>Genuine Betting IDs</th>
+                <th>Others in Market</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Years in Operation</td>
-                <td className={styles.highlightCol}>Since 2010 (13+ yrs)</td>
-                <td>Under 2 years (most)</td>
+                <td className={styles.highlightCol}>Since 2010 (13+ years)</td>
+                <td>&lt;2 Years (Most)</td>
               </tr>
               <tr>
                 <td>ID Activation Time</td>

@@ -23,21 +23,21 @@ export default function HeroSection() {
         </div>
         
         <p className={`${styles.subtitle} animate-fade-in animate-delay-2`}>
-          A need of betting ID has become an important part while placing bets and enjoying your favorite games. Tiger365 pro ID is made in such a way that it lets users feel safe and excited at the same time.
+          A need of betting ID has become a necessary part while placing bets and enjoying your favorite games. Tiger365 pro ID is created in such a way that it provides users with the best feeling of security and excitement.
         </p>
         
         <div className={`${styles.ctaGroup} animate-fade-in animate-delay-3`}>
           <WhatsAppButton className={styles.mainCta}>
-            👉 Get Tiger365 Pro ID Here 👈
+            👉 Buy Tiger365 Pro ID Here 👈
           </WhatsAppButton>
           <WhatsAppButton variant="outline" className={styles.secondaryCta}>
-            👉 Contact Genuine Betting IDs 👈
+            👉 Chat With Genuine Betting IDs 👈
           </WhatsAppButton>
         </div>
         
         <div className={`${styles.stats} animate-fade-in animate-delay-3`}>
           <div className={styles.statItem}>
-            <h3>100,000+</h3>
+            <h3>1,00,000+</h3>
             <p>Active Bettors</p>
           </div>
           <div className={styles.statItem}>

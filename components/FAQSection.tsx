@@ -6,7 +6,7 @@ import { SITE_CONFIG } from "@/config/constants";
 const faqs = [
   {
     q: `What is ${SITE_CONFIG.brand.name}?`,
-    a: `${SITE_CONFIG.brand.name} is India’s leading online betting ID platform, offering premium access to Tiger365 Pro ID and other top exchanges. It provides members with instant ID activation, live sports betting markets, and fast withdrawals.`
+    a: `Genuine Betting IDs is India’s #1 online betting ID provider, giving members instant access to Tiger365 Pro ID and other leading exchange platforms. We offer members instant ID activation and access to live sports betting markets, along with fast withdrawals and 24/7 customer support.`
   },
   {
     q: `How do I get a Tiger365 Pro ID?`,

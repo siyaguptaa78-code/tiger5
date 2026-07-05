@@ -13,29 +13,24 @@ export default function ResponsibleGaming() {
 
           <div className={styles.content}>
             <p className={styles.intro}>
-              {SITE_CONFIG.brand.name} is an entertainment platform. Betting involves real money and carries financial risk. The platform takes responsible gaming seriously and asks every member to do the same.
+              Genuine Betting IDs is an entertainment service and betting involves real money. We encourage responsible gaming and ask that you gamble only with money that you are willing to spend and within your means. If you feel that you have a problem, please seek help and do not continue betting.
             </p>
 
             <div className={styles.grid}>
               <div className={styles.col}>
-                <h3>Before You Bet, Remember:</h3>
+                <h3>Before You Start Betting, Remember:</h3>
                 <ul className={styles.list}>
-                  <li>Only bet with money you can afford to lose without financial hardship.</li>
-                  <li>Set a deposit limit before you start and stick to it.</li>
-                  <li>Never try to recover a loss by placing larger bets – it rarely works.</li>
-                  <li>Take breaks regularly, especially during long live betting sessions.</li>
-                  <li>If betting starts to feel compulsive or stressful, stop and seek help.</li>
+                  <li>Only bet with money you are prepared to lose without financial strain</li>
+                  <li>Set a deposit limit for yourself and stick to it</li>
+                  <li>If you have a losing streak, do not chase losses by depositing more money</li>
+                  <li>Always take breaks, especially during live betting</li>
+                  <li>If betting is negatively affecting your life, stop immediately and seek help</li>
                 </ul>
               </div>
 
               <div className={styles.col}>
-                {/* <h3>Support Is Available</h3> */}
-                {/* <div className={styles.helpline}>
-                  National Problem Gambling Helpline:
-                  <strong>1800-522-4700</strong>
-                </div> */}
                 <p className={styles.age}>
-                  This platform is strictly for users aged <strong>18 and above</strong>. Age verification is part of the onboarding process.
+                  This site is for users 18 years or older only. By using this site, you agree to our terms and conditions and acknowledge that you have read and understood the responsible gaming information provided.
                 </p>
               </div>
             </div>

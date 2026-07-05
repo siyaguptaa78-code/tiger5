@@ -9,41 +9,41 @@ export default function RegistrationSteps() {
         <div className={styles.grid}>
           <div className={styles.contentCol}>
             <h2 className="section-title">
-              How to Generate Your Tiger365 Pro ID
+              Instructions To Generate Your Tiger365 Pro ID
             </h2>
             <p className={styles.intro}>
-              Obtaining an ID is the first and easiest step. With Tiger365 Pro ID, even a beginner can create their own account in minutes without any long, time-wasting steps.
+              An ID is the first step toward making things easier and more convenient. With Tiger365 Pro ID, anyone can open their account within minutes without having to go through a long and tedious process.
             </p>
             
             <div className={styles.stepsList}>
               <div className={styles.step}>
-                <h3>Step 1 – Go to Tiger365 Pro ID</h3>
-                <p>Visit the official website of tiger365 pro ID. Avoid any duplicate or fake sites.</p>
+                <h3>Step 1 – Open Tiger365 Pro ID</h3>
+                <p>Go to the official website of tiger365 pro ID. Avoid using any third-party sites as they might be fraudulent.</p>
               </div>
               
               <div className={styles.step}>
                 <h3>Step 2 – Sign In</h3>
-                <p>Tap on Sign In and fill out the registration form to create an account.</p>
+                <p>Click on Sign In and complete the registration form to create your account.</p>
               </div>
               
               <div className={styles.step}>
-                <h3>Step 3 – Filling in Your Details</h3>
-                <p>Fill up your personal information, which includes name, mobile number, and email.</p>
+                <h3>Step 3 – Fill In Your Details</h3>
+                <p>Provide your personal details including your name, mobile number and email id.</p>
               </div>
               
               <div className={styles.step}>
-                <h3>Step 4 – Verify Your Information</h3>
-                <p>The platform would verify whether the information is correct or not by verifying using code or OTP.</p>
+                <h3>Step 4 – Verify Your Details</h3>
+                <p>Once you are done filling the form, the website will verify your details through a code or OTP.</p>
               </div>
 
               <div className={styles.step}>
-                <h3>Step 5 – Create a Password</h3>
-                <p>A username will be generated, but a password will be required. Create a strong password that you can easily remember.</p>
+                <h3>Step 5 – Set Up A New Password</h3>
+                <p>You will be provided with a username, however, you will have to set up a new password. Ensure to set up a strong password that you will be able to remember easily.</p>
               </div>
 
               <div className={styles.step}>
-                <h3>Step 6 – Get Your ID</h3>
-                <p>Your account will be created. Explore the website, games, features and your login page.</p>
+                <h3>Step 6 – Obtain Your ID</h3>
+                <p>Your account has been created. You can browse the website, access the games, features and your login portal.</p>
               </div>
             </div>
           </div>

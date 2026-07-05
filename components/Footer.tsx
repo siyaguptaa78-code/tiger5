@@ -15,7 +15,7 @@ export default function Footer() {
               <span className={styles.logoAnna}>{SITE_CONFIG.brand.logoText2}</span>
             </Link>
             <p className={styles.desc}>
-              Experience secure online gaming, fast Tiger365 Pro IDs, instant deposits, quick withdrawals, and premium customer support with a trusted gaming platform designed for Indian users.
+              Experience secure online gaming, instant Tiger365 Pro IDs, UPI deposits, instant withdrawals and 24/7 customer support with this trusted Indian betting platform.
             </p>
           </div>
 

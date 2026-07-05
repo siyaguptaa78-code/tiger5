@@ -49,7 +49,7 @@ export default function GameLobbies() {
           Official <span>Tiger365 Pro</span> Exchange Lobbies
         </h2>
         <p className={`text-center ${styles.subtitle}`}>
-          Click on any lobby banner below to get instant access and start playing with India's most secure betting ID.
+          Click on any of the below-mentioned lobby banners to get immediate access and enjoy your betting fun with India’s most trusted betting ID
         </p>
 
         {/* 1. Casino Lobbies */}
