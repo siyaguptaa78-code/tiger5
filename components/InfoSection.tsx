@@ -199,7 +199,7 @@ export default function InfoSection() {
               Thus, it can be concluded that the article provided our valuable customers with an ultimate guide on the basics, working process, application, and benefits related to tiger365 pro ID.
             </p>
             <p className={styles.introParagraph} style={{ fontWeight: 'bold', color: 'var(--primary)' }}>
-              For more details, stay tuned with Genuinebettingids.com
+              For more details, stay tuned with Tiger365login.com
             </p>
             <div className={styles.btnRowTwo}>
               <WhatsAppButton className={styles.largeChatBtn}>
