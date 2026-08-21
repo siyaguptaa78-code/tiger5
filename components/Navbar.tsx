@@ -53,7 +53,6 @@ export default function Navbar() {
           <a href={`${SITE_CONFIG.whatsappLink}?text=Hi! I want my 1xBet ID.`} target="_blank" rel="noopener noreferrer">1xBet</a>
           <a href={`${SITE_CONFIG.whatsappLink}?text=Hi! I want my Fairplay24 ID.`} target="_blank" rel="noopener noreferrer">Fairplay24</a>
           <a href={`${SITE_CONFIG.whatsappLink}?text=Hi! I want my Fairplay4 ID.`} target="_blank" rel="noopener noreferrer">Fairplay4</a>
-          <Link href="/#about">Genuine Betting IDs</Link>
           <Link href="/#about">About</Link>
           <Link href="/blogs">Blogs</Link>
           <Link href="/#contact">Contact</Link>
@@ -82,7 +81,6 @@ export default function Navbar() {
           <a href={`${SITE_CONFIG.whatsappLink}?text=Hi! I want my 1xBet ID.`} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>1xBet</a>
           <a href={`${SITE_CONFIG.whatsappLink}?text=Hi! I want my Fairplay24 ID.`} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>Fairplay24</a>
           <a href={`${SITE_CONFIG.whatsappLink}?text=Hi! I want my Fairplay4 ID.`} target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>Fairplay4</a>
-          <Link href="/#about" onClick={() => setMobileMenuOpen(false)}>Genuine Betting IDs</Link>
           <Link href="/#about" onClick={() => setMobileMenuOpen(false)}>About Us</Link>
           <Link href="/blogs" onClick={() => setMobileMenuOpen(false)}>Blogs</Link>
           <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>

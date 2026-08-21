@@ -1,70 +1,103 @@
 .section {
   background-color: var(--secondary);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
-.grid {
+.header {
+  margin-bottom: 4rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.processGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 4rem;
 }
 
-.intro {
-  color: var(--text-secondary);
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 2.5rem;
-}
-
-.stepsList {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.step {
-  position: relative;
-  padding-left: 1.5rem;
-  border-left: 2px solid var(--primary);
-}
-
-.step h3 {
-  font-size: 1.3rem;
-  color: var(--text-primary);
-  margin-bottom: 0.5rem;
-}
-
-.step p {
-  color: var(--text-secondary);
-  line-height: 1.5;
-  font-size: 0.95rem;
-}
-
-.imageCol {
-  position: relative;
-}
-
-.imageWrapper {
-  position: relative;
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+.stepCard {
+  background: var(--background);
   border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
 }
 
-.stepImage {
-  width: 100%;
-  height: auto;
-  display: block;
+.stepCard:hover {
+  border-color: var(--primary);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.stepHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stepNumber {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.2);
+  font-family: var(--font-fjalla), sans-serif;
+}
+
+.stepCard:hover .stepNumber {
+  color: var(--primary);
+}
+
+.stepIcon {
+  font-size: 2rem;
+}
+
+.stepCard h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.8rem;
+}
+
+.stepCard p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.ctaWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.primaryCta {
+  background: var(--primary) !important;
+  color: #000 !important;
+  font-size: 1.2rem !important;
+  padding: 18px 48px !important;
+  border-radius: 8px !important;
 }
 
 @media (max-width: 992px) {
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
+  .processGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .imageCol {
-    order: -1;
+}
+
+@media (max-width: 768px) {
+  .processGrid {
+    grid-template-columns: 1fr;
+  }
+  .primaryCta {
+    width: 100%;
   }
 }

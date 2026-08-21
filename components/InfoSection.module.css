@@ -2,82 +2,71 @@
   background-color: var(--background);
 }
 
-/* Part 1: Intro Styles */
-.introBox {
-  max-width: 900px;
-  margin: 0 auto 5rem auto;
-  text-align: center;
-  padding: 1rem;
+.twoColumnGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: center;
 }
 
-.introTitle {
-  font-family: var(--font-fjalla), 'Fjalla One', sans-serif;
+.textColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerHighlight {
+  margin-bottom: 1.5rem;
+}
+
+.headerHighlight h2 {
   font-size: 2.5rem;
-  font-weight: 400;
-  color: var(--primary);
-  margin-bottom: 1.8rem;
-  line-height: 1.3;
-}
-
-.introTextWrapper {
-  margin-bottom: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.2;
 }
 
 .introParagraph {
   font-size: 1.1rem;
   color: var(--text-secondary);
-  line-height: 1.8;
-  margin-bottom: 1.2rem;
-  text-align: center;
+  line-height: 1.7;
+  margin-bottom: 2rem;
 }
 
-.btnRowOne {
+.highlightsList {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.highlightItem {
+  display: flex;
+  align-items: flex-start;
   gap: 1rem;
-  flex-wrap: wrap;
-  margin-bottom: 1.2rem;
 }
 
-.btnRowTwo {
+.highlightIcon {
+  font-size: 1.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 12px;
+  border-radius: 8px;
   display: flex;
-  justify-content: center;
-  margin-top: 0.5rem;
-}
-
-.largeChatBtn {
-  background: var(--gradient-gold) !important;
-  color: #000000 !important;
-  border-radius: 6px !important;
-  padding: 14px 45px !important;
-  font-size: 1.1rem !important;
-  font-weight: 700 !important;
-  box-shadow: var(--shadow-gold) !important;
-  transition: var(--transition) !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.5px;
-}
-
-.largeChatBtn:hover {
-  transform: translateY(-2px) !important;
-  box-shadow: 0 6px 20px rgba(var(--primary-rgb), 0.45) !important;
-}
-
-/* Part 2: ID Section Styles */
-.idSectionBox {
-  border-top: 1px solid var(--border);
-  padding-top: 4rem;
-}
-
-.idSectionBox:not(:first-child) {
-  margin-top: 4rem;
-}
-
-.twoColumnGrid {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 3.5rem;
   align-items: center;
+  justify-content: center;
+}
+
+.highlightItem strong {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.3rem;
+}
+
+.highlightItem p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
 }
 
 .imageColumn {
@@ -85,11 +74,9 @@
 }
 
 .imageWrapper {
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   border: 1px solid var(--border);
-  background: var(--secondary);
 }
 
 .idImg {
@@ -99,105 +86,184 @@
   object-fit: cover;
 }
 
-.textColumn {
+/* Timeline */
+.idSectionBox {
+  margin-top: 5rem;
+  padding-top: 5rem;
+  border-top: 1px solid var(--border);
+}
+
+.timelineHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.introTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--border);
+  z-index: 1;
+}
+
+.timelineStep {
+  position: relative;
+  z-index: 2;
+  width: 18%;
+  text-align: center;
+}
+
+.stepNumber {
+  width: 60px;
+  height: 60px;
+  background: var(--background);
+  border: 2px solid var(--primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin: 0 auto 1.5rem auto;
+}
+
+.stepContent h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.stepContent p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* Overview */
+.overviewGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 1.5rem;
+}
+
+.overviewMain {
+  background: var(--secondary);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
   display: flex;
   flex-direction: column;
 }
 
-.headerHighlight {
-  background: var(--secondary);
-  padding: 8px 20px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-bottom: 1.5rem;
-  align-self: flex-start;
-  border: 1px solid var(--border);
+.overviewImageWrapper {
+  height: 300px;
+  overflow: hidden;
 }
 
-.headerHighlight h3 {
-  margin: 0;
-  font-size: 1.8rem;
-  font-weight: 400;
+.overviewContent {
+  padding: 2rem;
+}
+
+.overviewContent h3 {
+  font-size: 1.5rem;
   color: var(--primary);
-  font-family: var(--font-fjalla), sans-serif;
-  letter-spacing: 0.5px;
+  margin-bottom: 0.8rem;
 }
 
-.idLeadText {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: var(--text-secondary);
-  margin-bottom: 1.2rem;
-}
-
-.idSubLeadText {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 1.2rem;
-}
-
-.checklist {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.checklist li {
-  display: flex;
-  gap: 0.8rem;
-  align-items: flex-start;
-  margin-bottom: 1.2rem;
-  font-size: 1.05rem;
+.overviewContent p {
   color: var(--text-secondary);
   line-height: 1.6;
 }
 
-.bulletCheck {
-  color: var(--primary);
-  font-weight: 900;
+.overviewSecondaryCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.overviewCard {
+  background: var(--secondary);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.overviewCardDark {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.overviewCardContent h3, .overviewCardDark h3 {
   font-size: 1.2rem;
-  line-height: 1;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
 }
 
-.idFooterText {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: var(--text-muted);
-  margin-top: 1.5rem;
-  padding-top: 1.2rem;
-  border-top: 1px dashed var(--border);
+.overviewCardContent p, .overviewCardDark p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 992px) {
   .twoColumnGrid {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
   }
-  .imageColumn {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .introTitle {
-    font-size: 2rem;
-  }
-  .btnRowOne {
+  .timeline {
     flex-direction: column;
-    align-items: stretch;
+    gap: 2rem;
   }
-  .btnRowOne a {
+  .timeline::before {
+    top: 0;
+    bottom: 0;
+    left: 30px;
+    height: auto;
+    width: 2px;
+  }
+  .timelineStep {
     width: 100%;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    gap: 1.5rem;
   }
-  .largeChatBtn {
-    width: 100%;
-    padding: 12px 20px !important;
-    font-size: 1rem !important;
+  .stepNumber {
+    margin: 0;
+    flex-shrink: 0;
   }
-  .headerHighlight h3 {
-    font-size: 1.5rem;
+  .overviewGrid {
+    grid-template-columns: 1fr;
   }
 }

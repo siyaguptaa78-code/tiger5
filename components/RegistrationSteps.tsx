@@ -1,64 +1,79 @@
 import styles from "./RegistrationSteps.module.css";
-import Image from "next/image";
-import { SITE_CONFIG } from "@/config/constants";
+import WhatsAppButton from "./WhatsAppButton";
 
 export default function RegistrationSteps() {
   return (
     <section className={`section-padding ${styles.section}`} id="steps">
       <div className="container">
-        <div className={styles.grid}>
-          <div className={styles.contentCol}>
-            <h2 className="section-title">
-              Instructions To Generate Your Tiger365 Pro ID
-            </h2>
-            <p className={styles.intro}>
-              An ID is the first step toward making things easier and more convenient. With Tiger365 Pro ID, anyone can open their account within minutes without having to go through a long and tedious process.
-            </p>
-            
-            <div className={styles.stepsList}>
-              <div className={styles.step}>
-                <h3>Step 1 – Open Tiger365 Pro ID</h3>
-                <p>Go to the official website of tiger365 pro ID. Avoid using any third-party sites as they might be fraudulent.</p>
-              </div>
-              
-              <div className={styles.step}>
-                <h3>Step 2 – Sign In</h3>
-                <p>Click on Sign In and complete the registration form to create your account.</p>
-              </div>
-              
-              <div className={styles.step}>
-                <h3>Step 3 – Fill In Your Details</h3>
-                <p>Provide your personal details including your name, mobile number and email id.</p>
-              </div>
-              
-              <div className={styles.step}>
-                <h3>Step 4 – Verify Your Details</h3>
-                <p>Once you are done filling the form, the website will verify your details through a code or OTP.</p>
-              </div>
+        <div className={styles.header}>
+          <h2 className="section-title text-center">
+            Get Your Tiger365 Pro ID
+          </h2>
+          <p className={`text-center ${styles.subtitle}`}>
+            A simple, secure, and fast process to access premium gaming.
+          </p>
+        </div>
 
-              <div className={styles.step}>
-                <h3>Step 5 – Set Up A New Password</h3>
-                <p>You will be provided with a username, however, you will have to set up a new password. Ensure to set up a strong password that you will be able to remember easily.</p>
-              </div>
+        <div className={styles.processGrid}>
+          <div className={styles.stepCard}>
+            <div className={styles.stepHeader}>
+              <span className={styles.stepNumber}>01</span>
+              <span className={styles.stepIcon}>🌐</span>
+            </div>
+            <h3>Open Platform</h3>
+            <p>Access the official Tiger365 Pro ID registration portal.</p>
+          </div>
 
-              <div className={styles.step}>
-                <h3>Step 6 – Obtain Your ID</h3>
-                <p>Your account has been created. You can browse the website, access the games, features and your login portal.</p>
-              </div>
+          <div className={styles.stepCard}>
+            <div className={styles.stepHeader}>
+              <span className={styles.stepNumber}>02</span>
+              <span className={styles.stepIcon}>🔑</span>
             </div>
+            <h3>Sign In</h3>
+            <p>Begin the secure account creation process.</p>
           </div>
-          
-          <div className={styles.imageCol}>
-            <div className={styles.imageWrapper}>
-              <Image 
-                src={SITE_CONFIG.images.registrationBanner} 
-                alt="Tiger365 Pro ID Registration Steps" 
-                width={1000}
-                height={500}
-                className={styles.stepImage}
-              />
+
+          <div className={styles.stepCard}>
+            <div className={styles.stepHeader}>
+              <span className={styles.stepNumber}>03</span>
+              <span className={styles.stepIcon}>📝</span>
             </div>
+            <h3>Details</h3>
+            <p>Provide your basic profile information.</p>
           </div>
+
+          <div className={styles.stepCard}>
+            <div className={styles.stepHeader}>
+              <span className={styles.stepNumber}>04</span>
+              <span className={styles.stepIcon}>✅</span>
+            </div>
+            <h3>Verify</h3>
+            <p>Confirm your identity through secure OTP verification.</p>
+          </div>
+
+          <div className={styles.stepCard}>
+            <div className={styles.stepHeader}>
+              <span className={styles.stepNumber}>05</span>
+              <span className={styles.stepIcon}>🔐</span>
+            </div>
+            <h3>Password</h3>
+            <p>Set a strong, unique password for your account.</p>
+          </div>
+
+          <div className={styles.stepCard}>
+            <div className={styles.stepHeader}>
+              <span className={styles.stepNumber}>06</span>
+              <span className={styles.stepIcon}>🎉</span>
+            </div>
+            <h3>ID Ready</h3>
+            <p>Your Tiger365 Pro ID is now active and ready to use.</p>
+          </div>
+        </div>
+
+        <div className={styles.ctaWrapper}>
+          <WhatsAppButton className={styles.primaryCta}>
+            Get Tiger365 Pro ID Now
+          </WhatsAppButton>
         </div>
       </div>
     </section>

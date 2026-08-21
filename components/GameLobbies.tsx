@@ -35,8 +35,6 @@ const FUN_LOBBIES = [
 ];
 
 export default function GameLobbies() {
-  const [showPromo, setShowPromo] = useState<string | null>(null);
-
   const getWhatsAppLink = (lobbyName: string) => {
     const text = encodeURIComponent(`Hi, I want to access the ${lobbyName} Lobby! Please set up my official Tiger365 Pro ID.`);
     return `${SITE_CONFIG.whatsappLink}?text=${text}`;
@@ -46,14 +44,14 @@ export default function GameLobbies() {
     <section className={`section-padding ${styles.section}`} id="lobbies">
       <div className="container">
         <h2 className="section-title text-center">
-          Official <span>Tiger365 Pro</span> Exchange Lobbies
+          Explore <span>Available Lobbies</span>
         </h2>
         <p className={`text-center ${styles.subtitle}`}>
-          Click on any of the below-mentioned lobby banners to get immediate access and enjoy your betting fun with India’s most trusted betting ID
+          Access premium gaming experiences and sports betting markets directly through your Tiger365 Pro ID.
         </p>
 
         {/* 1. Casino Lobbies */}
-        <h3 className={styles.categoryTitle}>Slot & Casino Lobbies</h3>
+        <h3 className={styles.categoryTitle}>Premium Casino Lobbies</h3>
         <div className={styles.casinoGrid}>
           {CASINO_LOBBIES.map((lobby, index) => (
             <a
@@ -62,72 +60,47 @@ export default function GameLobbies() {
               target="_blank"
               rel="noopener noreferrer"
               className={styles.casinoCard}
-              style={{ background: lobby.gradient }}
             >
               <div className={styles.lobbyContent}>
                 <span className={styles.lobbyIcon}>{lobby.icon}</span>
                 <span className={styles.lobbyName}>{lobby.name}</span>
               </div>
-              <span className={styles.joinBadge}>Join Lobby ➜</span>
+              <span className={styles.joinBadge}>Explore ➜</span>
             </a>
           ))}
         </div>
 
         {/* 2. Sports Lobbies */}
         <h3 className={styles.categoryTitle} style={{ marginTop: "4rem" }}>Sports Betting Markets</h3>
+        
+        <h4 className={styles.subCategoryTitle}>Featured Sports</h4>
         <div className={styles.sportsGrid}>
-          {SPORTS_LOBBIES.map((lobby, index) => (
+          {SPORTS_LOBBIES.filter(s => ['CRICKET', 'TENNIS', 'FOOTBALL'].includes(s.name)).map((lobby, index) => (
             <div
               key={index}
-              className={`${styles.sportsCard} ${lobby.name === "ELECTION" ? styles.electionCard : ""}`}
-              style={{ background: lobby.gradient }}
-              onClick={() => {
-                if (lobby.name === "ELECTION") {
-                  setShowPromo(showPromo === "election" ? null : "election");
-                } else {
-                  window.open(getWhatsAppLink(lobby.name), "_blank");
-                }
-              }}
+              className={styles.sportsCard}
+              onClick={() => window.open(getWhatsAppLink(lobby.name), "_blank")}
             >
-              {lobby.badge && <span className={styles.badge}>{lobby.badge}</span>}
               <div className={styles.sportsIcon}>{lobby.icon}</div>
               <h4 className={styles.sportsName}>{lobby.name}</h4>
-              <span className={styles.actionText}>
-                {lobby.name === "ELECTION" ? "View Promo ➜" : "Place Bets ➜"}
-              </span>
+              <span className={styles.actionText}>View Markets</span>
             </div>
           ))}
         </div>
 
-        {/* Election Promotional Modal / Banner (Triggered by Election Card) */}
-        {showPromo === "election" && (
-          <div className={styles.promoBannerBox}>
-            <div className={styles.promoHeader}>
-              <h4>🗳️ Assembly Election 2026 Betting Live!</h4>
-              <button onClick={() => setShowPromo(null)} className={styles.closeBtn}>×</button>
+        <h4 className={styles.subCategoryTitle} style={{ marginTop: "2rem" }}>Other Markets</h4>
+        <div className={styles.sportsGrid}>
+          {SPORTS_LOBBIES.filter(s => !['CRICKET', 'TENNIS', 'FOOTBALL'].includes(s.name)).map((lobby, index) => (
+            <div
+              key={index}
+              className={styles.sportsCardSecondary}
+              onClick={() => window.open(getWhatsAppLink(lobby.name), "_blank")}
+            >
+              <span className={styles.sportsIconSmall}>{lobby.icon}</span>
+              <h4 className={styles.sportsNameSmall}>{lobby.name}</h4>
             </div>
-            <div className={styles.promoBody}>
-              <div className={styles.promoImageWrapper}>
-                <img
-                  src="https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp"
-                  alt="Assembly Election Betting"
-                  className={styles.promoImg}
-                />
-              </div>
-              <div className={styles.promoContent}>
-                <h5>West Bengal Assembly Election 2026 Live Markets</h5>
-                <p>
-                  Place your votes and predictions on the upcoming assembly elections. Get the most competitive odds, fast result settlement, and 100% verified payouts.
-                </p>
-                <div style={{ marginTop: "1rem" }}>
-                  <WhatsAppButton className={styles.promoCta}>
-                    Place Election Predictions Now
-                  </WhatsAppButton>
-                </div>
-              </div>
-            </div>
-          </div>
-        )}
+          ))}
+        </div>
 
         {/* 3. Fun & Crash Lobbies */}
         <h3 className={styles.categoryTitle} style={{ marginTop: "4rem" }}>Crash & Fun Games</h3>
@@ -139,24 +112,24 @@ export default function GameLobbies() {
               target="_blank"
               rel="noopener noreferrer"
               className={styles.funCard}
-              style={{ background: lobby.gradient }}
             >
               <div className={styles.funHeader}>
                 <span className={styles.funIcon}>{lobby.icon}</span>
                 <span className={styles.funSub}>{lobby.sub}</span>
               </div>
               <h4 className={styles.funLabel}>{lobby.label}</h4>
-              <span className={styles.playBadge}>Play Now ➜</span>
+              <span className={styles.playBadge}>Play ➜</span>
             </a>
           ))}
         </div>
 
         <div className="text-center" style={{ marginTop: "4rem" }}>
           <WhatsAppButton className={styles.centralCta}>
-            💬 Join Any Game Lobby via WhatsApp 💬
+            Get Your ID & Start Playing
           </WhatsAppButton>
         </div>
       </div>
     </section>
   );
 }
+

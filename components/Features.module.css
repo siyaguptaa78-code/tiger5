@@ -1,60 +1,125 @@
 .featuresSection {
   background-color: var(--background);
-  position: relative;
 }
 
 .subtitle {
   color: var(--text-secondary);
-  font-size: 1.1rem;
-  margin-bottom: 3.5rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1.15rem;
+  max-width: 650px;
+  margin: 0 auto 4rem auto;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.8rem;
+.benefitsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   margin-bottom: 4rem;
+}
+
+.featuredCard {
+  background: var(--secondary);
+  border-radius: 12px;
+  border: 1px solid var(--primary);
+  padding: 3rem;
+  box-shadow: 0 10px 40px rgba(var(--primary-rgb), 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.featuredCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(var(--primary-rgb), 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: translate(30%, -30%);
+  pointer-events: none;
+}
+
+.featuredContent {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.iconLarge {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.featuredContent h3 {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.featuredContent p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.featureBullets {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.featureBullets li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.featureBullets li::before {
+  content: "✓";
+  color: var(--primary);
+}
+
+.secondaryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
 }
 
 .card {
   background: var(--secondary);
-  padding: 2.2rem 1.8rem;
-  border-radius: 8px;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
   border: 1px solid var(--border);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(var(--primary-rgb), 0.15);
   border-color: var(--primary);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .icon {
-  font-size: 2.8rem;
-  margin-bottom: 1.2rem;
-  display: inline-block;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
 
 .card h3 {
-  font-size: 1.35rem;
-  color: var(--primary);
-  font-weight: 400;
+  font-size: 1.1rem;
+  color: var(--text-primary);
   margin-bottom: 0.8rem;
-  font-family: var(--font-fjalla), sans-serif;
 }
 
 .card p {
   color: var(--text-secondary);
   font-size: 0.95rem;
-  line-height: 1.55;
-  font-family: var(--font-raleway), sans-serif;
+  line-height: 1.5;
+  margin: 0;
 }
 
 .ctaWrapper {
@@ -63,24 +128,35 @@
 }
 
 .largeCta {
-  font-size: 1.15rem;
-  padding: 16px 36px;
-  border-radius: 50px;
+  background: var(--primary) !important;
+  color: #000 !important;
+  font-size: 1.2rem !important;
+  padding: 18px 48px !important;
+  border-radius: 8px !important;
 }
 
 @media (max-width: 992px) {
-  .grid {
+  .secondaryGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  .grid {
+  .featuredCard {
+    padding: 2rem;
+  }
+  .featuredContent h3 {
+    font-size: 1.5rem;
+  }
+  .featureBullets {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .secondaryGrid {
     grid-template-columns: 1fr;
   }
   .largeCta {
     width: 100%;
-    font-size: 1rem;
     padding: 14px 20px;
   }
 }

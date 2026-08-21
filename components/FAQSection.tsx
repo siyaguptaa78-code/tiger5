@@ -6,27 +6,23 @@ import { SITE_CONFIG } from "@/config/constants";
 const faqs = [
   {
     q: `What is ${SITE_CONFIG.brand.name}?`,
-    a: `Genuine Betting IDs is India’s #1 online betting ID provider, giving members instant access to Tiger365 Pro ID and other leading exchange platforms. We offer members instant ID activation and access to live sports betting markets, along with fast withdrawals and 24/7 customer support.`
+    a: `Tiger365 Pro ID is your secure, unified digital identity providing instant access to premium sports betting exchanges and live casino platforms with 24/7 customer support.`
   },
   {
     q: `How do I get a Tiger365 Pro ID?`,
-    a: `Click any “Get ID” or WhatsApp button on our page, enter your details, and receive your login credentials via WhatsApp within 60 seconds. No documents required for registration.`
+    a: `Click any "Get ID" or WhatsApp button on our page, enter your basic details, and receive your verified login credentials securely.`
   },
   {
-    q: "What is the minimum deposit?",
-    a: "The minimum deposit is ₹100 – the lowest minimum in the Indian market."
+    q: "What payment methods are supported?",
+    a: "We support major secure payment methods including UPI (GPay, PhonePe, Paytm), direct bank transfers, and cryptocurrency for deposits and withdrawals."
   },
   {
-    q: "How fast are withdrawals?",
-    a: "UPI withdrawals process in under 30 minutes. Bank transfers complete in 1 to 2 hours. Crypto payouts take 5 to 15 minutes. Available 24/7."
+    q: "Can I access the platform on my mobile device?",
+    a: "Yes. Our platform is fully optimized for all mobile browsers, providing a seamless experience without requiring any app downloads."
   },
   {
-    q: "Can I access it on mobile?",
-    a: "Yes. It works on any mobile browser. No app download is required. The platform is fully optimised for mobile screens."
-  },
-  {
-    q: "What age is required to use this platform?",
-    a: "18 years and above only. Age is verified during the registration process."
+    q: "What is the age requirement to use this platform?",
+    a: "You must be 18 years or older to register and use our services. Age verification is a mandatory part of our secure registration process."
   }
 ];
 

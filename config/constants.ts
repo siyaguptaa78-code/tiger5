@@ -1,9 +1,9 @@
 export const SITE_CONFIG = {
   brand: {
-    name: "Genuine Betting IDs",
-    logoText1: "GENUINE",
-    logoText2: "BETTING IDS",
-    logoSub: "— TIGER365 PRO ID —"
+    name: "Tiger365 Pro ID",
+    logoText1: "TIGER365",
+    logoText2: "PRO ID",
+    logoSub: "— PREMIUM ACCESS —"
   },
 
   // ==========================================
@@ -123,7 +123,6 @@ export const SITE_CONFIG = {
       "bonuses",
       "comparison",
       "faq",
-      "testimonials",
       "responsible"
     ]
   }
