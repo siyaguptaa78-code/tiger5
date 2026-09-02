@@ -39,6 +39,50 @@ export default function BlogsPage() {
           </div>
 
           <div className={styles.grid}>
+            {/* Tiger365Login Guide Card */}
+            <article className={styles.card}>
+              <div className={styles.imageWrapper}>
+                <Image
+                  src="/tiger365login_guide_banner.jpg"
+                  alt="Tiger365Login Complete Guide"
+                  width={400}
+                  height={220}
+                  className={styles.image}
+                  priority
+                />
+              </div>
+              <div className={styles.cardContent}>
+                <div className={styles.cardMeta}>
+                  <span>Account & Security</span>
+                  <span className={styles.metaSeparator}></span>
+                  <span>September 2, 2026</span>
+                </div>
+                <h2 className={styles.cardTitle}>
+                  Tiger365Login: Complete Guide to Login, Account Access, ID, Security and Common Issues
+                </h2>
+                <p className={styles.cardExcerpt}>
+                  Tiger365Login is the vital gateway for accessing your sports exchange portfolio. Learn how to log in securely, solve common credential and cache errors, protect your OTPs, and avoid fake phishing domains.
+                </p>
+                <Link href="/tiger365login-guide/" className={styles.showMoreBtn}>
+                  Show More
+                  <svg
+                    className={styles.arrowIcon}
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </Link>
+              </div>
+            </article>
+
             {/* T20 World Cup Winners List Blog Card */}
             <article className={styles.card}>
               <div className={styles.imageWrapper}>
