@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Raleway, Fjalla_One } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { SITE_CONFIG } from "@/config/constants";
 
@@ -9,9 +10,9 @@ const fjallaOne = Fjalla_One({ weight: "400", subsets: ["latin"], variable: "--f
 export const metadata: Metadata = {
   metadataBase: new URL('https://tiger365login.com'),
   verification: {
-    google: "gc2b-N16p9vybcQVftbeaH_XxYvJmRfJQJlQ3-Ixceo",
+    google: "wc1-N_qovGM7kkiUpVqCylsrbMPAPslDhgGSUHh1OWE",
   },
-  title: `Tiger365 Pro ID – Ultimate Guide to Online Betting | ${SITE_CONFIG.brand.name}`,
+  title: `Tiger365 Login & Pro ID – Official Betting ID Guide`,
   description: SITE_CONFIG.description,
   keywords: ["Tiger365 Pro ID", "Genuine Betting IDs", "Tiger365 Pro ID registration", "Tiger365 Pro", "Online Betting India", "Cricket Betting ID"],
   applicationName: 'Tiger365',
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: `Tiger365 Pro ID – Ultimate Guide to Online Betting`,
+    title: `Tiger365 Login & Pro ID – Official Betting ID Guide`,
     description: SITE_CONFIG.description,
     url: "https://tiger365login.com",
     siteName: "Tiger365",
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `Tiger365 Pro ID – Ultimate Guide to Online Betting | ${SITE_CONFIG.brand.name}`,
+    title: `Tiger365 Login & Pro ID – Official Betting ID Guide`,
     description: SITE_CONFIG.description,
     images: ["https://genuinebettingids.com/wp-content/uploads/2025/11/Tiger365-Pro-ID-.webp"],
   },
@@ -74,7 +75,23 @@ export default function RootLayout({
           '--border': SITE_CONFIG.theme.border,
         } as React.CSSProperties}
       >
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MQ6NVNZV"
+        height="0" width="0" style={{ display: 'none', visibility: 'hidden' }}></iframe></noscript>
         {children}
+        <Script id="gtm-script" strategy="afterInteractive" dangerouslySetInnerHTML={{
+          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MQ6NVNZV');`
+        }} />
+        <Script id="ga-script-1" strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-PW61XER0EB" />
+        <Script id="ga-script-2" strategy="afterInteractive" dangerouslySetInnerHTML={{
+          __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-PW61XER0EB');`
+        }} />
       </body>
     </html>
   );

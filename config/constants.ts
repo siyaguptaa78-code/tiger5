@@ -23,7 +23,7 @@ export const SITE_CONFIG = {
     border: "#222222",
   },
 
-  description: "Explore Tiger365 Pro ID by knowing the ways to register, games, live betting, benefits, safety concerns, and what's inside.",
+  description: "Learn about Tiger365 Pro ID, login access, sports betting markets, casino games, payment methods and responsible gaming information.",
   whatsappNumber: "918360750829",
   whatsappLink: "https://wa.me/918360750829",
   url: "https://tiger365login.com",
