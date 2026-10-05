@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   title: `Tiger365 Login & Pro ID – Official Betting ID Guide`,
   description: SITE_CONFIG.description,
-  keywords: ["Tiger365 Pro ID", "Genuine Betting IDs", "Tiger365 Pro ID registration", "Tiger365 Pro", "Online Betting India", "Cricket Betting ID"],
+  keywords: ["Tiger365 Pro ID", "Genuine Betting IDs", "Tiger365 Pro ID registration", "Tiger365 Pro", "Online Betting India", "Cricket Betting ID", "tiger365 login pro id", "tiger365 pro id login", "how to get tiger365 pro id", "Online cricket id", "Online id beting", "Tiger 365 id online"],
   applicationName: 'Tiger365',
   authors: [{ name: 'Tiger365' }],
   creator: 'Tiger365',
